@@ -17,7 +17,7 @@
 require_once('Pagination.php');
 
 $param = array(
-    'totalRows'=>'200',
+    'totalRows'=>'300',
     'pageSize'=>'20',
     'offset'=>'5',
     'pageParam'=>'page',
@@ -26,7 +26,7 @@ $param = array(
     'prevPageLabel'=>'上一页',
     'nextPageLabel'=>'下一页',
     'endPageLabel'=>'尾页',
-    'class'=>'page'
+    'class'=>'pagination'
 );
 
 $page1 = new Pagination($param);
@@ -35,9 +35,9 @@ $page3 = new Pagination($param);
 $page4 = new Pagination($param);
 $page5 = new Pagination($param);
 
-echo '总记录数：100';
+echo '总记录数：'.$page1->getTotalRows();
 echo '<hr />';
-echo '每页记录2条<hr/ >';
+echo '每页记录'.$page1->getPageSize().'条<hr/ >';
 echo '当前页码：'.$page1->getCurrentPage().'<hr />';
 echo '共计'.$page1->getPageAmount().'页<hr />';
 echo $page1->pagination();
