@@ -197,6 +197,7 @@ class Pagination
      * 获取用户当前URL的基准链接
      * 1、如果链接携带参数，则在链接之后加&page=
      * 2、如果不携带参数，则直接加?page=
+     * @return boolean
      */
     public function getBaseRoute()
     {
@@ -207,6 +208,7 @@ class Pagination
         if(!$queryString)
         {
             $this->route = $prevUrl.'?'.$this->pageParam.'=';
+            return false;
         }
 
         $queryArr = explode('&' , $queryString);
