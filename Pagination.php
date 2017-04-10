@@ -199,7 +199,7 @@ class Pagination
      * 2、如果不携带参数，则直接加?page=
      * @return boolean
      */
-    public function getBaseRoute()
+    private function getBaseRoute()
     {
         $currentUrl = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
         $urlArr = explode('?' , $currentUrl);
@@ -362,5 +362,4 @@ class Pagination
             return $allLink;
         }
     }
-
 }
