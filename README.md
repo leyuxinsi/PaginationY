@@ -1,6 +1,6 @@
 # PaginationY
 
-![https://raw.githubusercontent.com/leyuxinsi/PaginationY/master/20170410111354.png](演示图片)
+![演示图片](http://7xrxlw.com1.z0.glb.clouddn.com/20170410111354.png)
 
 PaginationY是一个可以灵活定制的PHP分页类。具有以下优点：
 
