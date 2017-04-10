@@ -41,7 +41,7 @@ echo '每页记录'.$page1->getPageSize().'条<hr/ >';
 echo '当前页码：'.$page1->getCurrentPage().'<hr />';
 echo '共计'.$page1->getPageAmount().'页<hr />';
 echo $page1->pagination();
-echo $page2->pagination('1'); //默认为1，所以和不填写效果一样
+//echo $page2->pagination('1'); //默认为1，所以和不填写效果一样
 echo $page3->pagination('2');
 echo $page4->pagination('3');
 echo $page5->pagination('4');
