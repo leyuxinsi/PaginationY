@@ -1,5 +1,7 @@
 # PaginationY
 
+![https://raw.githubusercontent.com/leyuxinsi/PaginationY/master/20170410111354.png](演示图片)
+
 PaginationY是一个可以灵活定制的PHP分页类。具有以下优点：
 
  1. 可以灵活的自定义配置各项参数
