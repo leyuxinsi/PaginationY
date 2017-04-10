@@ -14,7 +14,7 @@
 <body>
 
 <?php
-require_once('Pagination.php');
+require_once('PaginationY.php');
 
 $param = array(
     'totalRows'=>'300',
@@ -29,11 +29,11 @@ $param = array(
     'class'=>'pagination'
 );
 
-$page1 = new Pagination($param);
-$page2 = new Pagination($param);
-$page3 = new Pagination($param);
-$page4 = new Pagination($param);
-$page5 = new Pagination($param);
+$page1 = new PaginationY($param);
+$page2 = new PaginationY($param);
+$page3 = new PaginationY($param);
+$page4 = new PaginationY($param);
+$page5 = new PaginationY($param);
 
 echo '总记录数：'.$page1->getTotalRows();
 echo '<hr />';
