@@ -115,3 +115,44 @@ $page1 = new Pagination(array(
 ### class
 
 选填参数，所有分页链接按钮最外层div的类名。默认为`pagination`
+
+
+
+## 方法
+
+### pagination()
+
+创建分页链接方法。该方法有两个可选参数
+
+- style：分页输出的内容
+  -  默认为 1 ：获取链接全部组件
+  -  $style == 2 ：仅获取数字链接
+  -  $style == 3 ：仅获取上一页，下一页
+  -  $style == 4 ：仅获取上一页、下一页、数字链接，不包含首尾页
+- $output：控制是返回内容还是直接输出分页链接
+  - $output 为TRUE时，返回分页链接
+  - $output 为FALSE时，直接输出分页链接
+
+
+
+### getPageSize()
+
+获取每页的记录数量。
+
+
+
+### getTotalRows()
+
+获取数据库检索出来的数据总数。
+
+
+
+### getCurrentPage()
+
+获取当前页码
+
+
+
+### getPageAmount
+
+计算出所有的页数
