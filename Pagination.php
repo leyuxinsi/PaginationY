@@ -82,7 +82,7 @@ class Pagination
     {
         $param['currentPage'] = isset($_GET[$this->pageParam]) ? intval($_GET[$this->pageParam]) : 1;
         $this->getConfig($param);
-        $this->currentPage();
+        $this->checkCurrentPage();
     }
 
     /**
@@ -232,7 +232,7 @@ class Pagination
      * 如果当前页码小于1或者没有，则默认当前页码为1
      * 如果当前页码大于页码总数，则默认当前页码为页码总数
      */
-    private function currentPage()
+    private function checkCurrentPage()
     {
         $this->getPageAmount();
         if($this->currentPage < 1 || !$this->currentPage)
